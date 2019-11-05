@@ -10,7 +10,7 @@ import history from '../../history';
 
 function CartContent({className, products}) {
     let count = products.length;
-    let productsJSX = products.map(product => <CartProduct {...product} key={product._id}/>);
+    let productsJSX = products.map(product => <CartProduct {...product} key={product._id}/>); // take the id out of our product // ...product references the actual product 
     return (
         <div className={`${className} cart-content`}>
             <div className='cart-content__title'>
@@ -70,7 +70,7 @@ class ShopCart extends Component {
 }
 
 function mapStateToProps(state) {
-    const { cartProducts } = state.user;
+    const { cartProducts } = state.user; // pull out of userReducer.js
     return {
         cartProducts
     }
