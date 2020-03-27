@@ -8,7 +8,7 @@
     grid-template-columns: [img-s] 1fr [img-e links-s] 1fr [links-e];
 
     &__img {
-        transform: translateX(25px);
+        // transform: translateX(25px);
         grid-column: img-s/img-e;
         grid-row: 1/-1;
     }
